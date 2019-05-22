@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Js ejercicio</title>
+</head>
+<body>
+    <div>3 maneras de mostrar <span id="result"></span> en minúscula:</div>
+      <p>var amigo = 'Amigo';</p>
+      <p>
+        Opción 1:
+        var lowerCaseFriend = amigo.toLowerCase();
+      </p>
+      <p>
+        Opción 2:
+        var lowerCaseFriend2 = amigo.replace("A","a");
+      </p>
+      <p>
+        Opción 3:
+        <p>var firstLowerCase = 'a'</p>
+        <p>var amigo3 = amigo.substring(1,(amigo.length))</p>
+        <p>var lowerCaseFriend3 = firstLowerCase.concat(amigo3)</p>
+      </p>
+
+  <script>
+  var amigo = 'Amigo';
+
+    // Opción 1:
+  var lowerCaseFriend = amigo.toLowerCase();
+
+    // Opción 2:
+  var lowerCaseFriend2 = amigo.replace("A","a");
+
+    // Opción 3:
+  var firstLowerCase = 'a'
+  var amigo3 = amigo.substring(1,(amigo.length))
+  var lowerCaseFriend3 = firstLowerCase.concat(amigo3)
+  document.getElementById('result').innerHTML = lowerCaseFriend3
+  </script>
+
+</body>
+</html>
